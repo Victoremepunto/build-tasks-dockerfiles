@@ -124,8 +124,7 @@ def setup_arg_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--generate-id",
-        default=False,
-        type=bool,
+        action="store_true",
         help="Whether to generate a SPDX ID out of the image name and digest. Defaults to False.",
     )
     return parser

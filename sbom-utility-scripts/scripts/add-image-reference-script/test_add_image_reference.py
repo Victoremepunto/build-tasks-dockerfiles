@@ -203,7 +203,6 @@ def test_redirect_current_roots_to_new_root() -> None:
     [
         (True, "SPDXRef-image-quay.io/namespace/repository/image-sha256:digest"),
         (False, "SPDXRef-image"),
-        (None, "SPDXRef-image"),
     ],
 )
 def test_update_package_in_spdx_sbom(mock_root_redicret: MagicMock, generate_id, expected_spdxid) -> None:
